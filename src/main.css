@@ -1,0 +1,137 @@
+
+.dark-mode {
+    position: relative;
+    top: 15px;
+    left: 90vw;
+}
+
+.container {
+    margin-top: 50px ;
+    margin-left: 20vw;
+    margin-right: 20vw;
+}
+
+.Dark {
+    background-color: black;
+    color: white;
+    height: 100vh;
+}
+
+.Light {
+    background-color: #f4f5fa;
+    color: black;
+    height: 100vh;
+}
+
+.navbar {
+    width: 97vw;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.Light .navbar {
+    border-bottom: 2px solid black;
+}
+
+.Dark .navbar {
+    border-bottom: 2px solid white;
+}
+
+.Light .navbar a {
+    color: black;
+    text-decoration: none;
+   
+}
+
+
+.Light .navbar a:visited {
+    color: black;
+}
+
+.Dark .navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+.Dark .navbar a:visited {
+    color: white;
+}
+
+.Light  a {
+    color: black;
+    margin: 1vw;
+
+}
+
+
+.Light  a:visited {
+    color: black;
+    margin: 1vw;
+
+}
+
+.Dark  a {
+    color: white;
+    margin: 1vw;
+
+}
+
+.Dark  a:visited {
+    color: white;
+    margin: 1vw;
+
+}
+
+.nav-element {
+    margin: 1vw;
+}
+
+.switch {
+    display: inline-block;
+    height: 34px;
+    position: relative;
+    width: 60px;
+}
+
+.switch input {
+    display: none;
+}
+
+.slider {
+    background-color: #ccc;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: 0.4s;
+}
+
+.slider:before {
+    background-color: #fff;
+    bottom: 4px;
+    content: "";
+    height: 26px;
+    left: 4px;
+    position: absolute;
+    transition: 0.4s;
+    width: 26px;
+}
+
+input:checked + .slider {
+    background-color: #ccc;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+    
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
